@@ -1,0 +1,22 @@
+/**
+ * Да се напише програма со која преку стандарден влез се внесуваат 
+ * еден по еден 8 броеви и на екран се прикажуваат само парните броеви.
+ */
+#include <iostream>
+
+using namespace std;
+
+int main() {
+    int j=0;
+    int x[8];
+    while(j<8) {
+            cout << "Vnesi broj " << j+1 << ":";
+            cin >> x[j];
+            j++;}
+    j=0;
+    cout << "Parni broevi se: ";
+    while(j<8) {
+            if (x[j]%2 == 0) cout << x[j] << " ";
+            j++;}
+    return 0;
+}
