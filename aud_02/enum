@@ -1,0 +1,13 @@
+#include <iostream> 
+#include <conio.h> 
+using namespace std; 
+int main() 
+{ 
+  enum color { red, green, blue }; 
+  color mycolor = green; 
+  cout << mycolor;
+  getch();   	// getch function prompts the user to press a
+			// character and that character is not printed on 
+			// screen, getch header file is conio.h.
+return 0; 
+} 
