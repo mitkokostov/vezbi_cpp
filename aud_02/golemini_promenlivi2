@@ -1,0 +1,21 @@
+/**
+  * Големините на променливите може да се различни од зависно од преведувачот и компјутерот кој се користи.
+  */
+#include <iostream> 
+#include <conio.h> 
+#include <climits> 
+#include <cfloat> 
+using namespace std; 
+int main() 
+{ 
+  cout << "Najmal broj od tip int: " << INT_MIN << endl; 
+  cout << "Najgolem broj od tip int: " << INT_MAX << endl; 
+  cout << "Najmal broj od tip long: " << LONG_MIN << endl; 
+  cout << "Najgolem broj od tip long: " << LONG_MAX << endl; 
+  cout << "Najmal broj od tip float: " << FLT_MIN << endl;   // cfloat
+  cout << "Najgolem broj od tip float: " << FLT_MAX << endl; 
+  cout << "Najmal broj od tip double: " << DBL_MIN << endl; 
+  cout << "Najgolem broj od tip double: " << DBL_MAX << endl; 
+  getch();   // conio.h
+return 0; 
+} 
