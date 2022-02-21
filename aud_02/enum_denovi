@@ -1,0 +1,12 @@
+#include <iostream> 
+#include <conio.h> 
+using namespace std; 
+int main() 
+{
+	enum Denovi {Ponedelnik, Vtornik, Sreda, Cetvrtok, Petok, Sabota, Nedela}; 
+	Denovi PettiDen = Petok; 
+	cout << Vtornik << endl << PettiDen; 
+	getch(); 
+	return 0; 
+}
+
