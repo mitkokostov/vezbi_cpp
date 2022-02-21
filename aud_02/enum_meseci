@@ -1,0 +1,30 @@
+#include <iostream>
+#include <string>
+using namespace std;
+enum Mesec 
+{
+    januari, //0
+    fevruari, //1
+    mart, //2
+    april, //3
+    maj, //4
+    juni, //5
+    juli, //6
+    avgust, //7
+    septemvri, //8
+    oktomvri, //9
+    noemvri, //10
+    dekemvri //11 
+};
+int main() 
+{
+    Mesec m=fevruari;
+    if (m==januari)
+        cout << "Januari" << endl; //ne se pechati
+    if (m==fevruari)
+        cout << "Fevruari" << endl; //pechati 'Fevruari'
+    m=mart;
+    //pretopuvanje vo int
+    cout << (int)m << endl; //pechati '2'
+return 0; 
+}
