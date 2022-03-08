@@ -1,0 +1,13 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    char C;
+    cout << "Vnesi eden karakter: \n";
+    cin >> C;
+    cout << "ASCII kodot za vneseniot karakter e: "<<int(C)<<"\n";
+    cout << "Vneseniot karakter e: "<<C<<"\n";
+    return 0;
+}
