@@ -1,0 +1,19 @@
+/* Да се напише програма која ги разменува 
+   вредностите на две реални променливи
+*/
+
+#include <iostream>
+using namespace std;
+int main() {
+	cout<<"a=";
+	double a;
+	cin>>a;
+	cout<<"b=";
+	double b;
+	cin>>b;
+	double x; //pomosna promenliva
+	x=a; 	a=b; 	b=x;
+	cout<<"a="<<a<<endl;
+	cout<<"b="<<b<<endl;
+	return 0;
+}
