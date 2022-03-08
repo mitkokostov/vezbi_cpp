@@ -1,0 +1,14 @@
+//***********************************************************
+// Programa za presmetuvanje na sumata na broevite od 1 do n
+// so Gausovata formula
+//***********************************************************
+#include <iostream>
+using namespace std;
+int main(){
+int n;
+float suma;
+cin >> n;
+suma = float(n*(n+1))/2;
+cout << "Sumata na broevite od 1 do " << n << " e " << suma;
+return 0;
+}
