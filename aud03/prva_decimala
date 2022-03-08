@@ -1,0 +1,16 @@
+/* На целобројната променлива b да и се додели првата цифра 
+  после запирката од позитивниот реален број x 
+  (на пример, ако x=43.278, b=2) */
+
+#include <iostream> 
+#include <math.h> 
+using namespace std; 
+int main() 
+{	cout<<"x>0?\n"; 
+	double x; 
+	cin>>x; 
+	int i=floor(x*10); 
+	int b=i%10; 
+	cout<<x<<endl; 
+	cout<<b<<endl; 
+	return 0;	} 
