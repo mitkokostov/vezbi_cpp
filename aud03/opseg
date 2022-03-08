@@ -1,0 +1,16 @@
+
+// Пример за две различни вредности за променливата a 
+#include <iostream> 
+#include <conio.h> 
+using namespace std; 
+int main() 
+{ 
+       int a = 5; 
+       { 
+	int a = 1; 
+	cout << a << endl; 
+        } 
+        cout << a << endl; 
+        getch(); 
+        return 0; 
+} 
