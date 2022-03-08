@@ -1,0 +1,14 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    int c;
+    cout << "Vnesi eden broj (0-255): \n";
+    cin >> c;
+    cout << "Karakter koj odgovara na vneseniot broj \
+    spored ASCII e: "<<char(c)<<"\n";
+    cout << "Vneseniot broj e: "<<c<<"\n";
+    return 0;
+}
