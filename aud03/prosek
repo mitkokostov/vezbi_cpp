@@ -1,0 +1,16 @@
+//*********************************************************
+//Programata presmetuva prosek na ocenki po tri predmeti
+//*********************************************************
+#include <iostream>
+#include <iomanip>
+#define BROJ_PREDMETI 3;
+using namespace std;
+int main() {
+int mat, fiz, inf;
+float prosek;
+cout << "Vnesi ocenka za matematika "; cin >> mat;
+cout << "Vnesi ocenka za fizika "; cin >> fiz;
+cout << "Vnesi ocenka za informatika "; cin >> inf;
+prosek=float(mat+fiz+inf)/ BROJ_PREDMETI;
+cout <<fixed<< "Prosekot e " << setprecision(2)<<prosek << endl;
+return 0;	}
