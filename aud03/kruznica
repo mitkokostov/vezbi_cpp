@@ -1,0 +1,16 @@
+//******************************************************* 
+//Programata presmetuva perimetar i plostina na kruznica so radius r 
+//******************************************************** 
+#include <iostream>
+#include <cmath>
+#define PI 3.14159;
+using namespace std;
+int main() {
+float r,P,L;
+cout << "Vnesi go radiusot na kruznicata ";
+cin >> r;
+L=2*r*PI;
+P=pow(r,2)*PI;
+       cout << "Perimetarot na kruznica so radius " << r << " e " << L << endl;
+cout << "Plostinata na kruznica so radius " << r << " e " << P << endl;
+return 0; }
