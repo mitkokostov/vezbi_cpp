@@ -1,0 +1,19 @@
+/* Напиши програма која како излез ги дава следните три линии: 
+ * 7/4 so celobrojno delenje e <rezultat> 
+ * 7/4 so delenje na realni broevi e <rezultat> 
+ * Ostatokot na delenjeto na 7 so 4 e <rezultat>
+ **/
+
+#include <iostream> 
+using namespace std; 
+int main() 
+{ 
+const int SEDUM=7, CETIRI=4; 
+cout << SEDUM << "/" << CETIRI << " so celobrojno delenje e "; 
+cout << SEDUM/CETIRI << endl; 
+cout << SEDUM << "/" << CETIRI << " so delenje na realni broevi e ";
+cout << float(SEDUM)/float(CETIRI) << endl; 
+cout << "Ostatokot na delenjeto na "<< SEDUM << " so " << CETIRI << " e "; 
+cout << SEDUM%CETIRI << endl; 
+return 0;
+}
