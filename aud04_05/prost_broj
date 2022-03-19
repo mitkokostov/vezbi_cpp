@@ -1,3 +1,6 @@
+/**
+ * Програма која ќе испита дали даден број е прост
+ */
 #include <iostream>
 using namespace std;
 int main()
