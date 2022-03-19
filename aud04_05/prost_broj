@@ -1,0 +1,19 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+    int i, n;
+    bool Prost = true;
+    cout << "Vnesi broj: ";
+    cin >> n;
+    for (i = 2; i <= i/2; ++i) {
+        if (n%i == 0) {Prost = false; break;}
+    }
+    if (n==1)
+        cout << "Brojot 1 ne e nitu prost nitu slozen broj";
+        else
+        if (Prost) {cout << "Brojot "<<n<< " e prost";}
+        else {cout << "Brojot "<<n<< " ne e prost";}
+
+    return 0;
+}
