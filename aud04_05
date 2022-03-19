@@ -1,0 +1,22 @@
+* Програма која ќе ги испише првите n прости броеви
+
+#include <iostream>
+using namespace std;
+int main()
+{
+    int i, j, k, n;
+    bool Prost = true;
+    cout << "Vnesi broj: ";
+    cin >> n;
+    i = 2;
+    k = 0;
+    while (k < n) {
+        for (j = 2; j <= i/2; ++j) {
+            if (i%j == 0) {Prost = false; break;}
+        }
+        if (Prost) {cout << i << endl; ++k;}
+            ++i;
+        Prost = true;
+    }
+    return 0;
+}
