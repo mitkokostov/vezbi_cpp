@@ -1,0 +1,21 @@
+/**
+  * Да се испечатат првите 125 природни броеви кои не се 
+  * деливи со внесен природен број x
+  */
+
+#include <iostream>
+using namespace std;
+int main()
+{
+    int x, n1=0, i=1;
+    cin>>x;
+    while (n1<=125) {
+        if (i%x!=0){
+            n1++;
+            cout<<i<<" ";
+         }
+         i++;
+    }
+
+return 0;
+}
