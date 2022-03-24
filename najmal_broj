@@ -1,0 +1,19 @@
+*/ Да се напише програма со која корисникот внесува 
+*  десет броја и на екран се печати најмалиот број.
+*/
+#include <iostream>
+using namespace std;
+int main()
+{
+    int i, n, najmal;
+    cout<<"Vnesi 10 broevi:\n\n";
+    cin>>n;
+    najmal=n;
+    for (i=2;i<=10;i++){
+        cin>>n;
+        if (n<najmal)
+            najmal=n;
+    }
+    cout<<endl<<"Najmal broj e: " <<najmal;
+    return 0;
+    }
