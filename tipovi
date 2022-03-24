@@ -1,10 +1,10 @@
 /**
  * Кој тип го имаат следните изрази:
  * char c; int i; float f;
- * (a) 3*f    (b) float(i) * 5.1
+ * (a) 3*f    (b) float(i) * 5.1    (c) c + 8.3     (d) int(f) + c
  *
  * ------------------------------
  *
- * (a) float    (b) float
+ * (a) float    (b) float     (c) float     (d) int
  *
  */
