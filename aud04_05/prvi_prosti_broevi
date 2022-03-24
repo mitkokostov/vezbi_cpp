@@ -6,19 +6,19 @@
 using namespace std;
 int main()
 {
-    int i, j, k, n;
+    int i, n, k, N;
     bool Prost = true;
     cout << "Vnesi broj: ";
-    cin >> n;
-    i = 2;
+    cin >> N;
+    n = 2;
     k = 0;
-    while (k < n) {
-        for (j = 2; j <= i/2; ++j) {
-            if (i%j == 0) {Prost = false; break;}
-        }
-        if (Prost) {cout << i << endl; ++k;}
-            ++i;
-        Prost = true;
+    while (k < N) {
+            for (i = 2; i <= n/2; ++i) {
+                if (n%i == 0) {Prost = false; break;}
+    }
+    if (Prost) {cout << n << endl; ++k;}
+    ++n;
+    Prost = true;
     }
     return 0;
 }
