@@ -1,0 +1,26 @@
+/**
+  * Да се напише програма што од непознат број на цели броеви што се 
+  * внесуваат од тастатура ќе го определи бројот со минимална вредност. 
+  * Програмата завршува ако се внесе невалидна репрезентација на број.
+  */
+#include <iostream>
+using namespace std;
+int main(){
+    int n, najmal;
+    cout<<"Vnesuvaj broevi:\n\n";
+    cin>>n;
+    if (!cin){
+        cout<<"Ne e vnesen nitu eden broj."<<endl;
+        return 1;
+    }
+    else
+        najmal=n;
+    while (cin){
+        cin>>n;
+        if (cin)
+            if (n<najmal)
+                najmal=n;
+    }
+    cout<<endl<<"Najmal broj od vnesenite broevi e: " <<najmal<<endl;
+    return 0;
+}
