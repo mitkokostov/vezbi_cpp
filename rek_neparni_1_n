@@ -1,0 +1,26 @@
+/**
+  * Да се напише рекурзивна програма со која се печатат
+  * првите n непарни природни броеви. 
+  */
+  
+#include <iostream>
+#include <stdio.h>
+
+using namespace std;
+void neparni(int a, int n);
+
+int main()
+{
+   int n;
+    cout<<"Vnesi vrednost za n: ";
+    cin >> n;
+    cout << "Neparnite broevi od 1 do "<<n<<" se: ";
+    neparni(1,n);
+    return 0;
+}
+void neparni(int a, int n) {
+    if (n<a)
+        return;
+    cout<<a<<" ";
+        return neparni(a+2,n);
+}
