@@ -1,0 +1,24 @@
+/**
+  * Да се напише рекурзивна програма со која се пресметува
+  * сума на првите n природни броеви. 
+  */
+  
+#include <iostream>
+#include <stdio.h>
+
+using namespace std;
+unsigned int suma(unsigned int n);
+
+int main()
+{
+   int n;
+    cout<<"Vnesi vrednost za n: ";
+    cin>>n;
+    cout<<"Sumata na broevite od 1 do " << n<<" iznesuva: "<<suma(n)<<"\n";
+    return 0;
+}
+unsigned int suma(unsigned int n) {
+    if (n!=0)
+        return n + suma(n-1);
+    return 0;
+}
