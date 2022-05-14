@@ -1,0 +1,27 @@
+/**
+  * Да се напише рекурзивна програма со која се печатат
+  * непарните броеви меѓу m и n. 
+  */
+  
+#include <iostream>
+void neparni(int a, int n);
+
+int main()
+{
+   int a, n;
+    cout<<"Vnesi go prviot (poceten) neparen broj: ";
+    cin >> a;
+    cout<<"Vnesi go vtoriot (kraen) neparen broj: ";
+    cin >> n;
+    cout << "Neparnite broevi megu "<<a<<" i "<<n<<" se: ";
+    if (a%2==0)
+        a=a+1;
+    neparni(a,n);
+    return 0;
+}
+void neparni(int a, int n) {
+    if (n<a)
+        return;
+    cout<<a<<" ";
+        return neparni(a+2,n);
+}
