@@ -1,0 +1,46 @@
+// Da se ispita dali vnesen broj e palindrom
+#include <iostream>
+#include <cmath>
+using namespace std;
+
+void pal(int n)
+{
+    int cif=0, cif1, poc, i, pom, prva, posl;
+    bool odg;
+    poc=n;
+    while (n != 0)
+    {
+        cif=cif+1;
+        n/=10;
+    }
+    cif1=cif;
+    for(i=0; i<cif/2; i++)
+    {
+        pom=pow(10,(cif1-1));
+        prva=poc/pom;
+        posl=poc%10;
+        if(posl != prva)
+        {
+            cout<<" ne e palindrom "<<endl;
+            odg=false;
+            break;
+        }
+        else
+        {
+            poc=poc/10;
+            cif1=cif1-2;
+            poc=poc%int(pow(10,cif1));
+            odg=true;
+        }
+    }
+    if (odg==true)
+        cout<<"Brojot e palindrom";
+}
+
+int main()
+{
+    int n;
+    cin>>n;
+    pal(n);
+    return 0;
+}
