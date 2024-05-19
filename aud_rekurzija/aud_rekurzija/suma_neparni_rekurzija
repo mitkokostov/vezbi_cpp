@@ -1,0 +1,23 @@
+/*
+Користејќи рекурзија за дадено n да се дефинира низа од непарни броеви: 		
+1, 3, 5, 7, ...., n		
+*/
+#include <iostream>
+
+using namespace std;
+int suma_neparni(int a, int n);
+
+int main()
+{
+   int n;
+    cout<<"Vnesi vrednost za n: ";
+    cin >> n;
+    cout << "Sumata na neparnite broevi od 1 do "<<n<<" e: ";
+    cout<<suma_neparni(1,n);
+    return 0;
+}
+int suma_neparni(int a, int n) {
+    if (n<a)
+        return 0;
+    return a+suma_neparni(a+2,n);
+}
