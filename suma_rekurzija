@@ -1,0 +1,25 @@
+/* Користејќи рекурзија да се најде збир на првите n природни броеви: 		
+    1 + 2 + 3 + 4 + ... + n
+*/
+
+#include<iostream>
+using namespace std;
+
+int soberi(int n);
+
+int main() {
+    int n;
+
+    cout << "Vnesi pozitiven broj: ";
+    cin >> n;
+
+    cout << "Sumata na prvite " << n << " broevi e: " << soberi(n) << endl;
+
+    return 0;
+}
+
+int soberi(int n) {
+    if(n != 0)
+        return n + soberi(n - 1);
+    return 0;
+}
